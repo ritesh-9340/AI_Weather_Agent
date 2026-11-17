@@ -1,0 +1,37 @@
+
+ [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "Gets the weather of a city in degrees Celsius.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string",
+                        "description": "The name of the city."
+                    }
+                },
+                "required": ["city"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "suggest_activity",
+            "description": "Suggests activities based on the temperature.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "integer",
+                        "description": "Temperature in degrees Celsius."
+                    }
+                },
+                "required": ["temperature"]
+            }
+        }
+    }
+]
